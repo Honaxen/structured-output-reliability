@@ -35,6 +35,7 @@ SCHEMA_DATASET = [
                 "occupation": {"type": "string"},
             },
             "required": ["name", "age", "occupation"],
+            "additionalProperties": False,
         },
     },
     {
@@ -54,6 +55,7 @@ SCHEMA_DATASET = [
                 "release_year": {"type": "integer"},
             },
             "required": ["model_name", "price", "ram_gb", "storage_gb", "in_stock", "release_year"],
+            "additionalProperties": False,
         },
     },
     {
@@ -76,9 +78,11 @@ SCHEMA_DATASET = [
                         "zip": {"type": "string"},
                     },
                     "required": ["street", "city", "state", "zip"],
+                    "additionalProperties": False,
                 },
             },
             "required": ["name", "age", "address"],
+            "additionalProperties": False,
         },
     },
     {
@@ -94,6 +98,7 @@ SCHEMA_DATASET = [
                 "ingredients": {"type": "array", "items": {"type": "string"}},
             },
             "required": ["recipe_name", "ingredients"],
+            "additionalProperties": False,
         },
     },
     {
@@ -115,10 +120,12 @@ SCHEMA_DATASET = [
                             "years_experience": {"type": "integer"},
                         },
                         "required": ["name", "role", "years_experience"],
+                        "additionalProperties": False,
                     },
                 },
             },
             "required": ["team_members"],
+            "additionalProperties": False,
         },
     },
     {
@@ -145,9 +152,11 @@ SCHEMA_DATASET = [
                                 "zip": {"type": "string"},
                             },
                             "required": ["street", "city", "state", "zip"],
+                            "additionalProperties": False,
                         },
                     },
                     "required": ["name", "shipping_address"],
+                    "additionalProperties": False,
                 },
                 "items": {
                     "type": "array",
